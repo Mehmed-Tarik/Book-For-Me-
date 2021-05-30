@@ -1,0 +1,197 @@
+.filter_container{
+    height: auto;
+    background-color: rgba(175, 175, 175, 0.5);
+    width: auto;
+    padding: 2%;
+}
+.check_filters{
+    display: block;
+}
+label{
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.check_filters input{
+    width: 20px;
+    height: 20px;
+}
+.book-card img{
+    height: 10rem;
+    width: 10rem
+}
+.book-card{
+    width: 50%;
+    margin: auto;
+    margin-top: 2%
+}
+.filter_btn{
+    height: 100px;
+    width: 100%;
+    border-radius: 50%;
+}
+.filter_btn:after{
+    padding: '';
+    padding-bottom: 100%;
+    display: block;
+}
+.card{
+    width: 70%;
+    height: 40vh;
+    margin: auto;
+    position: relative;
+    transition: 1s;
+    perspective: 2000px;
+    box-shadow: inset 200px 0px 50px rgba(0,0,0,0.5);
+    padding: 0;
+}
+.matchedMessage h6{
+    /* margin-bottom: 2.5%; */
+     margin-top: 2.5%; 
+    border: 0.5px solid rgba(255, 255, 0, 0.589);
+    border-radius: 5px;
+    background-image: linear-gradient(to left, rgba(255, 255, 0, 0.19) , white);
+}
+
+.card:hover{
+    transform: perspective(2000px) rotate(-5deg);
+    box-shadow: inset 20px 0px 50px rgba(0,0,0,0.5);
+}
+
+.card > .imageBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.card > .imageBox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform-origin: top left;
+    transition: 1s;
+    object-fit: cover;
+}
+
+.card:hover > .imageBox img{
+    transform: rotateY(-136deg);
+}
+
+.card > .textBox{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 20px;
+}
+
+.card:hover .textBox{
+    animation: level 1s forwards;
+}
+
+@keyframes level{
+    0%{ z-index:0;}
+    100%{ z-index:1;}
+}
+
+.textBox p{
+    width: 100%;
+}
+.circle{
+    width: 70%;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    vertical-align: center;
+    margin: 1%;
+    font-weight: 700;
+}
+.circle:after{
+    content: '';
+    padding-bottom: 100%;
+    display: block;
+}
+.check_filters p{
+    margin: auto;
+    font-weight: 700;
+}
+.saveBtn{
+    margin-top: 3vh;
+    margin-left: 30%;
+}
+.fiterButtons{
+    width: 40%;
+    cursor: pointer;
+}
+.minusMargin{
+    margin-top: -1.65vh;
+}
+.cardTitle{
+    text-align: center;
+}
+.card-button{
+    width: 50%;
+    font-size: small;
+    padding-left: 0;
+    padding-right: 0;
+}
+.icons-card{
+    margin-top: -1.4vh;
+    color: red;
+}
+.iq{
+    cursor: pointer;
+}
+.directions{
+    margin-top:    2vh;
+    margin-bottom: 2vh;
+}
+.landing{
+    background-color: rgba(175, 175, 175, 0.5);
+    padding: 20px;
+}
+.genre_slider{
+        width: 100%;
+        background-color: none;
+        
+}
+.genre_slider img{
+    margin: 0 auto;
+}
+.genre_slider::after{
+    border: 2px solid blue;
+    background-color: blue;
+}
+.myFirstModal{
+    width: 40%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 25vh;
+    color: white;
+    background-color: rgba(0, 60, 255, 0.95);
+    border-radius: 5px;
+}
+.myFirstModal button{
+    float: right;
+    margin-top: -4.5vh;
+    margin-right: 5px;
+    font-weight: 800;
+    border: none;
+}
+.myFirstModal h2{
+    text-align: center;
+}
+.myFirstModal p{
+    text-align: center;
+    padding: 2%;
+}
+.SingIn p{
+    color: white;
+    font-weight: 700;
+}
